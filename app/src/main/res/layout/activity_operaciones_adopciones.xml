@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AzulSecundario"
+    tools:context=".ActivityOperacionesAdopciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/custome_edittext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:gravity="center"
+                        android:text="Adopciones"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextVCasosExitoBuscarOperacionesCasosExito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Empresa"
+                            android:visibility="gone" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/SpinnerAdopcionesBuscar"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custome_edittext"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:spinnerMode="dialog" />
+
+                        <Button
+                            android:id="@+id/BtAdopcionesBuscarOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="0"
+                            android:text="Buscar"
+                            android:textSize="16sp"
+                            app:backgroundTint="#4cb8b9"
+                            app:cornerRadius="15dp"
+                            app:icon="?android:attr/actionModeWebSearchDrawable"
+                            app:iconGravity="end"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTCodigoAdopcionOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Codígo de adopción"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <Button
+                            android:id="@+id/BtLimpiarCamposOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="0"
+                            android:textSize="15sp"
+                            app:backgroundTint="#4cb8b9"
+                            app:cornerRadius="15dp"
+                            app:icon="@android:drawable/ic_delete"
+                            app:iconGravity="textTop"
+                            app:iconSize="40sp"
+                            app:iconTint="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/Seguimiento1"
+                            android:layout_marginStart="32dp"
+                            android:layout_width="100dp"
+                            android:layout_height="125dp"
+                            android:layout_weight="1"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <Button
+                            android:id="@+id/Regresar1"
+                            android:layout_marginEnd="32dp"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rechazar"
+                            android:textSize="16sp"
+                            android:backgroundTint="@color/Rojo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/Seguimiento2"
+                            android:layout_marginStart="32dp"
+                            android:layout_width="100dp"
+                            android:layout_height="125dp"
+                            android:layout_weight="1"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <Button
+                            android:id="@+id/Regresar2"
+                            android:layout_marginEnd="32dp"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rechazar"
+                            android:backgroundTint="@color/Rojo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/Seguimiento3"
+                            android:layout_marginStart="32dp"
+                            android:layout_width="100dp"
+                            android:layout_height="125dp"
+                            android:layout_weight="1"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <Button
+                            android:id="@+id/Regresar3"
+                            android:layout_marginEnd="32dp"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rechazar"
+                            android:textSize="16sp"
+                            android:backgroundTint="@color/Rojo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTAdoptanteOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Adoptante"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTDireccionOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Dirección"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTCodigoAnimalOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Codígo del animal"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTNombreAnimalOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Nombre del animal"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTFechaAdopcionOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Fecha de adopción"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTInstitucionOperacionesAdopciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:background="@drawable/custome_edittext"
+                            android:ems="10"
+                            android:hint="Institución"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

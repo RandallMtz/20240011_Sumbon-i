@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppMovDoggepediaVersion2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/AzulPrincipal</item>
+    </style>
+
+    <style name="Theme.AppMovDoggepediaVersion2" parent="Base.Theme.AppMovDoggepediaVersion2" />
+
+    <style name="Theme.AppMovDoggepediaVersion2Dialogs" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">@color/AzulPrincipal</item> <!-- Fondo blanco -->
+        <item name="android:textColorPrimary">#000000
+        </item> <!-- Color del texto de las opciones -->
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/AzulPrincipal</item>
+        <item name="colorPrimaryVariant">@color/AzulPrincipal</item>
+        <item name="colorOnPrimary">@color/AzulPrincipal</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+</resources>

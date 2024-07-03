@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Gestion"
+        android:title="Gestión"
+        android:icon="@drawable/baseline_pets_24"/>
+
+
+    <item
+        android:id="@+id/Difusion"
+        android:title="Difusión"
+        android:icon="@drawable/baseline_campaign_24"/>
+
+    <item
+        android:id="@+id/Adopciones"
+        android:title="Adopciones"
+        android:icon="@drawable/baseline_library_add_check_24"/>
+
+</menu>

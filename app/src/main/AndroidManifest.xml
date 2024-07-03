@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Soluciones"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMovDoggepediaVersion2"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityListadoCasosExitosos"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySubirSeguimiento"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityListadoAdopcionesRevision"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOperacionesAdopciones"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityInformacionDelAnimal"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOperacionesAlianzas"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityModificarPerfilGenerico"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRecuperarContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOperacionesCampanas"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityListadoCampanas"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityListadoAlianzas"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityListadoEmpleados"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityListadoAnimales"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOperacionesUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOperacionesAnimales"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegUsuarioNuevoPart2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegUsuarioNuevoPart1"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMenuUsuarioCliente"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMenuUsuarioAdministrativo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMenuUsuarioEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAutentificacion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_fondo_autentificacion"
+    tools:context=".ActivityAutentificacion">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/custome_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/TextVTituloAutentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autentificación"
+                android:fontFamily="@font/baloo"
+                android:textAlignment="center"
+                android:textColor="@color/AzulPrincipal"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ImgVFotografiaAutentificacion"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/img_logotipo_autentificacion" />
+
+            <EditText
+                android:id="@+id/EditTUsuarioAutentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custome_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Usuario"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/EditTContraseñaAutentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custome_edittext"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawableRight="@drawable/baseline_visibility_off_24"
+                android:drawablePadding="8dp"
+                android:hint="Contraseña"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:maxLength="8"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+            <CheckBox
+                android:id="@+id/checkBoxGuardarContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar contraseña"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabBotonFlotante3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/baseline_local_phone_24"
+                    app:backgroundTint="@color/AzulPrincipal"
+                    app:fabSize="mini" />
+
+                <Button
+                    android:id="@+id/ButtonIniciarSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/AzulPrincipal"
+                    android:text="Iniciar sesión"
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/TextVRecuperarContraseñaAutentificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:keyboardNavigationCluster="false"
+                    android:text="Recuperar contraseña"
+                    android:textAlignment="center"
+                    android:textColor="#2A5AE8"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#202975"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TextVPreguntaAutentificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:keyboardNavigationCluster="false"
+                        android:text="¿No tienes cuenta?  "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/TextVRegistrarseAutentificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:keyboardNavigationCluster="false"
+                        android:text="Regístrate"
+                        android:textAlignment="center"
+                        android:textColor="#2A5AE8"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textColorLink="#202975"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBotonFlotante0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/fabBotonFlotante1"
+        android:src="@drawable/img_logotipo_leyes"
+        app:backgroundTint="#9bdeeb"
+        app:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBotonFlotante1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/img_logotipo_facebook"
+        app:backgroundTint="#9bdeeb"
+        app:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBotonFlotante2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/fabBotonFlotante1"
+        android:src="@drawable/baseline_check_circle_24"
+        app:backgroundTint="#9bdeeb"
+        app:fabSize="normal" />
+
+    <TextView
+        android:id="@+id/TextVNivelAdministrativoAutentificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+</RelativeLayout>
+
